@@ -4,19 +4,19 @@
 #Displays Buzz when the number is a multiple of 5
 #Otherwise, displays the number
 #In a list format
-/**author-omidoyin**/
-for number in {1..100}
+
+for i in {1..100}
 do
-    if [ $((number%3)) -eq 0 ] && [ $((number%5)) -eq 0 ]
+	if (( i % 3 == 0 && i % 5 == 0 ))
     then
         echo "FizzBuzz"
-    elif [ $((number%3)) -eq 0 ]
+elif (( i % 3 == 0 ))
     then
         echo "Fizz"
-    elif [ $((number%5)) -eq 0 ]
+elif (( i % 5 == 0 ))
     then
         echo "Buzz"
     else
-        echo "$number"
+        echo "$i"
     fi
 done

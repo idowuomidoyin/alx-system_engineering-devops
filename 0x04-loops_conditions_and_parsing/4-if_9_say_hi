@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" and "Hi" "Done"
-/**author-omi**/
-x="0"
-while [ $x -lt 10 ]
+# This script is displaying "Best School" and "Hi" "Done
+
+i=0
+
+while [ $i -lt 10 ]
 do
     echo "Best School"
-    if ((x == 8))
+    if ((i == 8))
     then
         echo "Hi"
-    fi
-    x=$((x+1))
+    if
+    i=$((i+1))
 done
